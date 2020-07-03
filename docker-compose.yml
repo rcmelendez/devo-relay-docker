@@ -39,6 +39,7 @@ services:
     volumes:
        ###App persisten information
        - ./conf/docker-start:/opt/devo/docker-start
+       - ./conf/install.sh:/opt/logtrust/relay/install.sh  
        - type: bind
          source: "./conf/relay-data"
          target: "/opt/devo/relay-data"
