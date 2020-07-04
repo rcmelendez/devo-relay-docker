@@ -6,7 +6,7 @@ if [ -f /opt/devo/relay-data/selfsigned ]; then
   export PYTHONHTTPSVERIFY=0
 fi
 
-export TZ=UTC
+#export TZ=America/New_York
 
 export LOGTRUST_HOME=${LOGTRUST_HOME:-/opt/logtrust}
 export LOGTRUST_CONF=${LOGTRUST_CONF:-/etc/logtrust}

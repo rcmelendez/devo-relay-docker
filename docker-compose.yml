@@ -34,6 +34,8 @@ services:
       - PROXY_PORT=
       - PROXY_USER=
       - PROXY_PASS=
+      # Choose your timezone (default TZ=UTC)
+      # - TZ=America/New_York  
     ports:
      - 12999-13030:12999-13030
     volumes:
