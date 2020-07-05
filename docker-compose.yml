@@ -37,7 +37,7 @@ services:
       # Choose your timezone (default TZ=UTC)
       # - TZ=America/New_York  
     ports:
-     - 12999-13030:12999-13030
+     - "12999-13030:12999-13030"
     volumes:
        ###App persisten information
        - ./conf/docker-start:/opt/devo/docker-start
