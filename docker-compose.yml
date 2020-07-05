@@ -1,19 +1,13 @@
 version: '3.7'
 
-# DCKHUB=devoinc/ docker-compose -f docker-devo-relay.yml up -d
-# Connect to container: docker exec -it Devo-Relay /bin/bash
-### Check the relay:
-# for i in $( seq 150 ) ; do echo "<14>$( date --iso-8601=seconds ) docker-relay test.keep.free: Docker Devo-Relay test event # $i" | nc -N localhost 13000 ; done
-#####
-
 networks:
-  devoring:
+  net:
 
 services:
   Devo-Relay:
-    image: ${DCKHUB}devo-relay:1.1.6
-    hostname: Relay
-    container_name: Devo-Relay
+    image: rcmelendez/devo-relay:centos8
+    hostname: relay-centos8
+    container_name: relay-centos8
     restart: always
     environment:
       - DUMMYSTAT=0
@@ -58,9 +52,9 @@ services:
          source: "./conf/logs"
          target: "/var/log"
     networks:
-       devoring:
-         aliases:
-           - DevoRelay
+      net:
+        aliases:
+          - DevoRelay
     # To debug comment the next line
     command: /opt/devo/docker-start
     logging:
