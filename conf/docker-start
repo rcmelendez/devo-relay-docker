@@ -32,6 +32,10 @@ if [[ ! -f "$FILE" ]]; then
   echo $! > /opt/devo/relay-data/scoja.pid
 fi
 
+# start rsyslogd
+sleep 3
+/etc/init.d/rsyslog start
+
 /usr/sbin/crond -n
 
 ### END
