@@ -4,7 +4,7 @@ networks:
   net:
 
 services:
-  Devo-Relay:
+  devo-relay:
     image: rcmelendez/devo-relay:centos8
     hostname: relay-centos8
     container_name: relay-centos8
@@ -32,6 +32,7 @@ services:
       # - TZ=America/New_York  
     ports:
      - "12999-13030:12999-13030"
+     # - "12999-13030:12999-13030/udp"  
     volumes:
        ###App persisten information
        - ./conf/docker-start:/opt/devo/docker-start
