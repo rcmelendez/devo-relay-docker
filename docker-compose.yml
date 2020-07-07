@@ -1,3 +1,4 @@
+# 3.8 supports Docker engine release 19.03.0+
 version: '3.8'
 
 networks:
