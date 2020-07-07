@@ -23,7 +23,7 @@ services:
       - RELAY_NAME=docker-mydomain
       # Get/create a valid API key in the Devo web app: Administration -> Credentials -> Access Keys
       - RELAY_APIKEY=YOUR_API_KEY
-      # Set proxy values if it's necessary in for your network. Default empty values are not applied
+      # Set proxy values if necessary. Default empty values are not applied
       - PROXY_HOST=
       - PROXY_PORT=
       - PROXY_USER=
