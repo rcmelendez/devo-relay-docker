@@ -1,11 +1,11 @@
-version: '3.7'
+version: '3.8'
 
 networks:
   net:
 
 services:
   devo-relay:
-    image: rcmelendez/devo-relay:centos8
+    image: rcmelendez/devo-relay
     hostname: relay-centos8
     container_name: relay-centos8
     restart: always
