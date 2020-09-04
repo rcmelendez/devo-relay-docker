@@ -35,7 +35,7 @@ It's always a good practice to use the latest version to get updated features an
 $ docker --version
 Docker version 19.03.12, build 48a66213fe
 $ docker-compose --version
-docker-compose version 1.26.1, build f216ddbf
+docker-compose version 1.26.2, build eefe0d31
 ```
 
 ### Setting up the timezone for your Docker container
@@ -68,7 +68,7 @@ Usage: /etc/init.d/rsyslog { start | stop | restart | status }
 ```
 
 ## Official Devo Resources
-- Documentation: [Install on Docker](https://docs.devo.com/confluence/ndt/sending-data-to-devo/the-devo-in-house-relay/installing-the-devo-relay/install-on-docker)
+- Documentation: [Install on Docker](https://docs.devo.com/confluence/ndt/sending-data-to-devo/the-devo-in-house-relay/installing-the-devo-relay/install-old-versions-of-the-relay/install-on-docker-v1-1-6)
 - DockerHub repo: [DevoInc/devo-relay](https://hub.docker.com/r/devoinc/devo-relay)
 - GitHub repo: [DevoInc/devo-relay](https://github.com/DevoInc/devo-relay)
 
