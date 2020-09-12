@@ -68,7 +68,7 @@ Usage: /etc/init.d/rsyslog { start | stop | restart | status }
 ```
 
 ## Official Devo Resources
-- Documentation: [Install on Docker](https://docs.devo.com/confluence/ndt/sending-data-to-devo/the-devo-in-house-relay/installing-the-devo-relay/install-old-versions-of-the-relay/install-on-docker-v1-1-6)
+- Documentation: [Install with Docker](https://docs.devo.com/confluence/ndt/sending-data-to-devo/the-devo-in-house-relay/installing-the-devo-relay/install-with-docker)
 - DockerHub repo: [DevoInc/devo-relay](https://hub.docker.com/r/devoinc/devo-relay)
 - GitHub repo: [DevoInc/devo-relay](https://github.com/DevoInc/devo-relay)
 
